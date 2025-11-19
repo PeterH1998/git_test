@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+</head>
+<body>
+
+  <h1>My Library</h1>
+
+  <!-- Button to open the form -->
+  <button id="newBookBtn">New Book</button>
+
+  <!-- The form -->
+  <form id="bookForm" style="display: none;">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="number" id="pages" placeholder="Pages" required>
+    <label>
+      <input type="checkbox" id="read"> Read
+    </label>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <!-- Where books will appear -->
+  <div id="library">
+    <table id="bookTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read?</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- JS will insert rows here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
